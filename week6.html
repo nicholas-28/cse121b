@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <main>
+        <div id="citydiv">
+            <h1 id="Para1">3 Days Weather Forecast</h1>
+            <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+            <button type="button" onclick="GetInfo()">Show Weather</button>        
+            <h2 id="cityName">---Type City Name---</h2>
+        </div>
+        <div class="weather-container">
+            <div class="card">
+            <div class="card__header">
+                <div class="card_top">
+                    <img src="" alt="" id="weather-icon"/>
+                    <h2 class="card__temp"><span id="temperature"></span></h2>
+                </div>
+                <p class="card__info"><span id="condition"></span></p>
+                <p class="card__info"><span id="humidity"></span></p>
+            </div>
+            <div class="card__days">
+                <p class="card__day"><span id="day1"></span><span id="day1_temp"></span></p>
+                <p class="card__day"><span id="day2"></span> <span id="day2_temp"></span></p>
+                <p class="card__day"><span id="day3"></span><span id="day3_temp"></span></p>
+            </div>
+            </div>
+        </div>
+    </main>
+<script src="js/weatherapi.js"></script>
+</body>
+</html>
